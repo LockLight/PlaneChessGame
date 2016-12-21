@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		CD9582E51E0A19580043A154 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9582E41E0A19580043A154 /* main.m */; };
+		CD9582ED1E0A1CBF0043A154 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9582EC1E0A1CBF0043A154 /* Player.m */; };
+		CD9582F01E0A32990043A154 /* MapData.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9582EF1E0A32990043A154 /* MapData.m */; };
+		CD9582F31E0A371B0043A154 /* single.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9582F21E0A371B0043A154 /* single.m */; };
+		CD9582F61E0A63EC0043A154 /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9582F51E0A63EC0043A154 /* GameView.m */; };
+		CD9582F91E0A99390043A154 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9582F81E0A99390043A154 /* GameController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,16 @@
 /* Begin PBXFileReference section */
 		CD9582E11E0A19580043A154 /* 飞行棋 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "飞行棋"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD9582E41E0A19580043A154 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD9582EB1E0A1CBF0043A154 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		CD9582EC1E0A1CBF0043A154 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		CD9582EE1E0A32990043A154 /* MapData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapData.h; sourceTree = "<group>"; };
+		CD9582EF1E0A32990043A154 /* MapData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapData.m; sourceTree = "<group>"; };
+		CD9582F11E0A371B0043A154 /* single.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = single.h; sourceTree = "<group>"; };
+		CD9582F21E0A371B0043A154 /* single.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = single.m; sourceTree = "<group>"; };
+		CD9582F41E0A63EC0043A154 /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
+		CD9582F51E0A63EC0043A154 /* GameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameView.m; sourceTree = "<group>"; };
+		CD9582F71E0A99390043A154 /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
+		CD9582F81E0A99390043A154 /* GameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,16 @@
 			isa = PBXGroup;
 			children = (
 				CD9582E41E0A19580043A154 /* main.m */,
+				CD9582EB1E0A1CBF0043A154 /* Player.h */,
+				CD9582EC1E0A1CBF0043A154 /* Player.m */,
+				CD9582F71E0A99390043A154 /* GameController.h */,
+				CD9582F81E0A99390043A154 /* GameController.m */,
+				CD9582EE1E0A32990043A154 /* MapData.h */,
+				CD9582EF1E0A32990043A154 /* MapData.m */,
+				CD9582F11E0A371B0043A154 /* single.h */,
+				CD9582F21E0A371B0043A154 /* single.m */,
+				CD9582F41E0A63EC0043A154 /* GameView.h */,
+				CD9582F51E0A63EC0043A154 /* GameView.m */,
 			);
 			path = "飞行棋";
 			sourceTree = "<group>";
@@ -118,6 +143,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD9582ED1E0A1CBF0043A154 /* Player.m in Sources */,
+				CD9582F61E0A63EC0043A154 /* GameView.m in Sources */,
+				CD9582F31E0A371B0043A154 /* single.m in Sources */,
+				CD9582F91E0A99390043A154 /* GameController.m in Sources */,
+				CD9582F01E0A32990043A154 /* MapData.m in Sources */,
 				CD9582E51E0A19580043A154 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
