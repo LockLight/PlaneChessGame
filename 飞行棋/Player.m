@@ -26,13 +26,13 @@
  *
  *  @return 移动后的玩家位置
  */
-- (int)moveForWordWith:(int)step{
+- (void)moveForWordWith:(int)step{
     _position += step;
     single *singleGate = [single shareSingle];
-    if (_position > singleGate.mapLength) {
-        _position = singleGate.mapLength;
+    //判断越界
+    if (_position > singleGate.mapLength-1) {
+        _position = singleGate.mapLength-1;
     }
-    return _position;
 }
 /**
  *  玩家后退方法
@@ -41,12 +41,12 @@
  *
  *  @return 移动后的玩家位置
  */
-- (int)moveBackWith:(int)step{
+- (void)moveBackWith:(int)step{
     _position -= step;
+    //判断越界
     if (_position < 0) {
         _position = 0;
     }
-    return _position;
 }
 
 /**
@@ -70,8 +70,6 @@
 {
     return [[self alloc] initWithName:name andSign:sign];
 }
-
-
 
 
 @end
