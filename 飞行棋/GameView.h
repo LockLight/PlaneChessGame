@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "MapData.h"
+#import "Player.h"
 
 //宏定义NSLog  忽略调试信息,不会自动换行
 #define NSLog(FORMAT, ...) printf("%s", [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String])
@@ -31,7 +32,7 @@
 + (instancetype)GameViewWithMapData:(MapData *)mapData;
 
 //显示地图
-- (void)showMap;
+- (void)showMapWith:(NSArray *)players;
 //清屏
 - (void)clearView;
 /**
