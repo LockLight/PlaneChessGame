@@ -73,18 +73,50 @@
 			isa = PBXGroup;
 			children = (
 				CD9582E41E0A19580043A154 /* main.m */,
-				CD9582EB1E0A1CBF0043A154 /* Player.h */,
-				CD9582EC1E0A1CBF0043A154 /* Player.m */,
-				CD9582F71E0A99390043A154 /* GameController.h */,
-				CD9582F81E0A99390043A154 /* GameController.m */,
-				CD9582EE1E0A32990043A154 /* MapData.h */,
-				CD9582EF1E0A32990043A154 /* MapData.m */,
-				CD9582F11E0A371B0043A154 /* single.h */,
-				CD9582F21E0A371B0043A154 /* single.m */,
-				CD9582F41E0A63EC0043A154 /* GameView.h */,
-				CD9582F51E0A63EC0043A154 /* GameView.m */,
+				CDD17B851E0B6A1D00ADBC11 /* Model */,
+				CDD17B861E0B6A3C00ADBC11 /* View */,
+				CDD17B871E0B6A6700ADBC11 /* Controller */,
+				CDD17B881E0B6B6300ADBC11 /* Singleton */,
 			);
 			path = "飞行棋";
+			sourceTree = "<group>";
+		};
+		CDD17B851E0B6A1D00ADBC11 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD9582EB1E0A1CBF0043A154 /* Player.h */,
+				CD9582EC1E0A1CBF0043A154 /* Player.m */,
+				CD9582EE1E0A32990043A154 /* MapData.h */,
+				CD9582EF1E0A32990043A154 /* MapData.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CDD17B861E0B6A3C00ADBC11 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD9582F51E0A63EC0043A154 /* GameView.m */,
+				CD9582F41E0A63EC0043A154 /* GameView.h */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CDD17B871E0B6A6700ADBC11 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD9582F81E0A99390043A154 /* GameController.m */,
+				CD9582F71E0A99390043A154 /* GameController.h */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CDD17B881E0B6B6300ADBC11 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				CD9582F21E0A371B0043A154 /* single.m */,
+				CD9582F11E0A371B0043A154 /* single.h */,
+			);
+			name = Singleton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +299,7 @@
 				CD9582EA1E0A19580043A154 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
