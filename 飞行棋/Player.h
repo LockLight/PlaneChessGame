@@ -24,10 +24,15 @@
  *  玩家在地图上的标识
  */
 @property(nonatomic,copy)NSString *sign;
+/**
+ *  玩家是否在地图上暂停,缺省值为否
+ */
+@property(nonatomic,assign,getter=isStop)BOOL stop;
+
 
 - (int)playDice;
-- (int)moveForWordWith:(int)step;
-- (int)moveBackWith:(int)stepp;
+- (void)moveForWordWith:(int)step;
+- (void)moveBackWith:(int)step;
 /**
  *  工程方法
  *
