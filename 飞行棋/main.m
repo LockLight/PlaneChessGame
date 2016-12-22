@@ -7,11 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GameController.h"
 
 int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
-    }
+    GameController *gameController = [GameController gameController];
+    [gameController startGame];
     return 0;
 }
