@@ -18,10 +18,10 @@
 - (instancetype)init{
     if (self = [super init]) {
         self.mapLength = 96;
-        self.bombCount = 16;
-        self.bigPlaneCount =5;
-        self.redGreenLightCount = 8;
-        self.luckyTurnCount = 6;
+        self.bombCount = 12;
+        self.bigPlaneCount = 10;
+        self.redGreenLightCount = 10;
+        self.luckyTurnCount = 8;
     }
     return self;
 }
