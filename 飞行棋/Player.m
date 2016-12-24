@@ -44,10 +44,10 @@
 - (void)moveBackWith:(int)step{
     _position -= step;
     //判断越界
-    if (_position < 0) {
-        _position = 0;
-    }
+    self.position = (self.position < 0 ? 0: self.position);
 }
+
+
 
 /**
  *  工程方法

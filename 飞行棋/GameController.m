@@ -198,6 +198,9 @@
     [_gameView waitEnter];
     for (int i =0; i< 6; i++) {
         player.position--;
+        if (player.position < 0) {
+            player.position = 0;
+        }
         //刷新地图
         [_gameView clearView];
         [self showLogo];
@@ -247,9 +250,10 @@
         Player *p1 = _players.firstObject;
         Player *p2 = _players.lastObject;
         //交换位置
-        int temp = p1.position;
-        p1.position = p2.position;
-        p2.position = temp;
+//        int temp = p1.position;
+//        p1.position = p2.position;
+//        p2.position = temp;
+        [_players exchangeObjectAtIndex:p1.position withObjectAtIndex:p2.position];
     }else{
         msg = [NSString stringWithFormat:@"玩家%@:%@,你选择了轰炸对方,对方将回退6格,请按回车继续\n",player.sign,player.name];
         [_gameView writeString:msg];
